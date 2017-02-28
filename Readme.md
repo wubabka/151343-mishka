@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Суворов](https://up.htmlacademy.ru/adaptive/10/user/151343).
-* Наставник: [Александр Талюк](https://htmlacademy.ru/profile/id364735).
+* Наставник:.
 
 ---
 
