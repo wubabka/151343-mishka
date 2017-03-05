@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img src="http://placehold.it/86x35" alt="Mishka">
+    </div>
+    <nav class="main-nav  main-nav__closed">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active"><a href="#">Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="#">Вязание на заказ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="category">
+    <header class="category__header">
+      <h1 class="category__title">Милые штуки ручной работы для дома</h1>
+    </header>
+    <table class="category_items">
+      <tr>
+        <td class="category__value">Предметы интерьера</td>
+        <td class="category__field"><img src="http://placehold.it/41x62" alt="Предметы интерьера"></td>
+      </tr>
+      <tr>
+        <td class="category__value">Детские игрушки</td>
+        <td class="category__field"><img src="http://placehold.it/61x61" alt="Детские игрушки"></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="product">
+    <header class="product__header">
+      <b class="product__title">Вязаные корзинки</b>
+      <div class="product__subtitle">Товар недели</div>
+      <p class="product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+    </header>
+    <table class="product_items">
+      <tr>
+        <td class="product__value">Цвет</td>
+        <td class="product__field">"Тиффани"/серый</td>
+      </tr>
+      <tr>
+        <td class="product__value">Диаметр</td>
+        <td class="product__field">25 см</td>
+      </tr>
+      <tr>
+        <td class="product__value">Высота</td>
+        <td class="product__field">15 см</td>
+      </tr>
+    </table>
+    <div class="product__wrapper">
+      <div class="product__photo">
+        <img src="http://placehold.it/260x315" alt="Вязаные корзинки">
+      </div>
+      <div class="product__price">Цена:990 руб.</div>
+      <button class="btn" type="button">ЗАКАЗАТЬ</button>
+    </div>
+  </section>
+
+<section class="about">
+  <header class="about__header">
+    <b class="about__title">Коротко о нас:</b>
+  </header>
+  <div class="about__wrapper">
+    <div class="about_logo">
+      <img src="http://placehold.it/33x38" alt="Экологически
+чистые материалы">
+    </div>
+    <div class="about__text">Экологически
+чистые материалы</div>
+
+    <div class="about_logo">
+        <img src="http://placehold.it/47x27" alt="Скандинавский стиль
+  по российской цене">
+      </div>
+      <div class="about__text">Скандинавский стиль
+  по российской цене</div>
+
+    <div class="about_logo">
+        <img src="http://placehold.it/34x27" alt="Увеличивает лайки
+  на фотографиях">
+      </div>
+      <div class="about__text">Увеличивает лайки
+  на фотографиях</div>
+
+    <div class="about_logo">
+        <img src="http://placehold.it/35x34" alt="Связано вручную с
+  любовью и умилением">
+      </div>
+      <div class="about__text">Связано вручную с
+  любовью и умилением</div>
+
+    <div class="about_logo">
+        <img src="http://placehold.it/55x23" alt="Поддержка отечественного производителя">
+      </div>
+      <div class="about__text">Поддержка отечественного производителя</div>
+
+      <div class="about_logo">
+      <img src="http://placehold.it/33x32" alt="Поставляется в
+подарочной упаковке">
+    </div>
+    <div class="about__text">Поставляется в
+подарочной упаковке</div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="reviews__wrapper">
+    <h2 class="reviews__title">Отзывы</h2>
+      <blockquote class="reviews__item  slider__item">
+        <p> Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <cite class="reviews__author-name">Анастасия Красильникова</cite>
+        <cite class="reviews__author-nickname">@misssssiskras</cite>
+      </blockquote>
+      <button class="reviews__prev" type="button">
+        <img src="http://placehold.it/51x26" alt="Предыдущий отзыв">
+      </button>
+      <button class="reviews__next" type="button">
+        <img src="http://placehold.it/51x26" alt="Следующий отзыв">
+      </button>
+      <button class="btn" type="button">НАПИСАТЬ</button>
+    </div>
+</section>
+<section class="contacts">
+  <header class="contacts__header">
+    <b class="contacts__title">Контакты</b>
+  </header>
+  <table class="contacts_items">
+      <tr>
+        <td class="contacts__value">e-mail:</td>
+        <td class="contacts__field">info@mimimishkashop.ru</td>
+      </tr>
+      <tr>
+        <td class="contacts__value">адрес:</td>
+        <td class="contacts__field">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</td>
+      </tr>
+    </table>
+    <div class="contacts__map">
+      <img src="http://placehold.it/320x457" alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+    </div>
+    <button class="btn" type="button">НАПИШИТЕ НАМ</button>
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <p class="page-footer__social">
+      <span class="social-links">
+        <a href="#" class="social__link social__link--in"><img src="http://placehold.it/22x21" alt="Мы в Инстаграм"></a>
+        <a href="#" class="social__link social__link--fb"><img src="http://placehold.it/15x29" alt="Мы в Фейсбук"></a>
+        <a href="#" class="social__link social__link--tw"><img src="http://placehold.it/24x20" alt="Мы в Твиттер"></a>
+      </span>
+    </p>
+    <p class="page-footer__copyright">
+    Разработано
+    <a class="page-footer__copyright-link" href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+    </p>
+  </div>
+</footer>
+</body>
 </html>
