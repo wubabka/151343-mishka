@@ -1,0 +1,169 @@
+.form {
+  margin: 30px 35px 0;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form ul {
+ list-style: none;
+}
+
+.form__text {
+  font-size: 13px;
+}
+
+.form__filter-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__head {
+  display: flex;
+  margin-top: 25px;
+}
+
+.form__title {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+  color: rgb(88, 204, 180);
+  flex-grow: 1;
+}
+
+.form__filter-line {
+  height: 1px;
+  background-color: rgb(88, 204, 180);
+  flex-grow: 7;
+  margin: auto;
+}
+
+.form__filter-field {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+}
+
+// Radio custom
+
+.form__filter-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.form__filter-radio + label {
+  cursor: pointer;
+}
+
+.form__filter-radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.form__filter-radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+
+.form__filter-radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color-black;
+  border-radius: 50%;
+}
+
+.form__filter-radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(88, 204, 180);
+  opacity: 0;
+  transition: all .2s;
+}
+
+.form__filter-radio:checked + label:after {
+  opacity: 1;
+}
+
+// CheckBox custom
+
+.form__filter-check + label {
+  cursor: pointer;
+}
+
+.form__filter-check:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.form__filter-check:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+
+.form__filter-check:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color-black;
+}
+
+.form__filter-check:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(88, 204, 180);
+  opacity: 0;
+  transition: all .2s;
+}
+
+.form__filter-check:checked + label:after {
+  opacity: 1;
+}
+
+// Input custom
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+  width: 245px;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  font-size: 17px;
+  padding: 15px 0;
+}
+
+.form__label {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+  margin-top: 30px;
+}
+
+
+textarea {
+  font-size: 17px;
+  margin-top: 30px;
+  border: 2px solid $color-black;
+  padding-left: 18px;
+  padding-top: 18px;
+}
+
+.form__text-required {
+  margin-top: 20px;
+  font-size: 13px;
+}

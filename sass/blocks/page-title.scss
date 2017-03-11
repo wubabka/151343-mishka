@@ -1,0 +1,33 @@
+// .page-title {
+//   height: 375px;
+//   position: relative;
+// }
+
+// .page-title img {
+//   overflow: hidden;
+//   transform: scale(1.8);
+//   margin-top: 90px;
+// }
+
+// .page-title__h1 {
+//   position: absolute;
+//   top: 80px;
+//   left: 35px;
+//   width: 250px;
+//   font-size: 27px;
+//   margin: 0 auto;
+//   text-align: center;
+// }
+
+
+.page-title {
+  display: flex;
+  height: 177px;
+  background-color: rgb(241, 241, 241);
+}
+
+.page-title__h1 {
+  margin: auto;
+  font-size: 27px;
+  font-weight: $font-weight-bold;
+}
