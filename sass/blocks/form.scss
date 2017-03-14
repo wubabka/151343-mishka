@@ -8,7 +8,7 @@
 }
 
 .form ul {
- list-style: none;
+  list-style: none;
 }
 
 .form__text {
@@ -39,33 +39,31 @@
   margin: auto;
 }
 
-.form__filter-field {
+.form__filter-field-radio,
+.form__filter-field-check {
   font-size: 17px;
   font-weight: $font-weight-bold;
 }
 
 // Radio custom
-
 .form__filter-item {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.form__filter-radio + label {
+.form__filter-radio,
+.form__filter-check {
+  display: none;
+}
+
+.form__filter-radio+label,
+.form__filter-check+label {
   cursor: pointer;
-}
-
-.form__filter-radio:not(checked) {
-  position: absolute;
-  opacity: 0;
-}
-
-.form__filter-radio:not(checked) + label {
   position: relative;
   padding: 0 0 0 60px;
 }
 
-.form__filter-radio:not(checked) + label:before {
+.form__filter-field-radio::before {
   content: '';
   position: absolute;
   top: -3px;
@@ -76,7 +74,7 @@
   border-radius: 50%;
 }
 
-.form__filter-radio:not(checked) + label:after {
+.form__filter-radio:checked+.form__filter-field-radio::after {
   content: '';
   position: absolute;
   top: 10px;
@@ -85,31 +83,10 @@
   height: 16px;
   border-radius: 50%;
   background: rgb(88, 204, 180);
-  opacity: 0;
-  transition: all .2s;
-}
-
-.form__filter-radio:checked + label:after {
-  opacity: 1;
 }
 
 // CheckBox custom
-
-.form__filter-check + label {
-  cursor: pointer;
-}
-
-.form__filter-check:not(checked) {
-  position: absolute;
-  opacity: 0;
-}
-
-.form__filter-check:not(checked) + label {
-  position: relative;
-  padding: 0 0 0 60px;
-}
-
-.form__filter-check:not(checked) + label:before {
+.form__filter-field-check::before {
   content: '';
   position: absolute;
   top: -3px;
@@ -119,28 +96,21 @@
   border: 2px solid $color-black;
 }
 
-.form__filter-check:not(checked) + label:after {
+.form__filter-check:checked+.form__filter-field-check::after {
   content: '';
   position: absolute;
   top: 10px;
-  left: 14px;
-  width: 16px;
+  left: 12px;
+  width: 22px;
   height: 16px;
-  border-radius: 50%;
-  background: rgb(88, 204, 180);
-  opacity: 0;
-  transition: all .2s;
-}
-
-.form__filter-check:checked + label:after {
-  opacity: 1;
+  background-image: url(../../img/icon-tick.svg);
+  background-size: cover;
 }
 
 // Input custom
-
 input[type="text"],
 input[type="tel"],
-input[type="email"]{
+input[type="email"] {
   width: 245px;
   border: none;
   border-bottom: 2px solid $color-black;
@@ -154,8 +124,7 @@ input[type="email"]{
   margin-top: 30px;
 }
 
-
-textarea {
+.form__textarea {
   font-size: 17px;
   margin-top: 30px;
   border: 2px solid $color-black;

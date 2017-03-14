@@ -36,7 +36,8 @@
     </div>
     <!--<input class="burger-check" id="burger-check" type="checkbox">
     <label for="burger-check" class="burger"></label>-->
-    <nav class="main-nav  main-nav--closed">
+    <nav class="main-nav  main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__items">
           <li class="main-nav__item  main-nav__item--active"><a href="index.html">Главная</a></li>
@@ -47,9 +48,8 @@
     </nav>
   </header>
 
-  <section class="page-title">
-    <img src="img/hero-mobile@1x.jpg" alt="Милые штуки ручной работы для дома">
-    <h1 class="page-title__h1">Милые штуки ручной<br>работы для дома</h1>
+  <section class="page-title  page-title--index">
+    <h1 class="page-title__h1  page-title__h1--index">Милые штуки ручной<br>работы для дома</h1>
   </section>
 
   <section class="category">
@@ -274,7 +274,7 @@
           />
         </svg>
       </button>
-      <button class="reviews__next" type="button">
+        <button class="reviews__next" type="button">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
           <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "
