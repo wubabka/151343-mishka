@@ -1,11 +1,12 @@
 .production {
-  margin: 30px;
-  border: 1px solid rgb(234, 234, 234);
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 .production__wrapper {
   display: flex;
   flex-direction: column;
+  border: 1px solid rgb(234, 234, 234);
 }
 
 .production__head {
