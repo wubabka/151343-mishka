@@ -24,6 +24,11 @@
   margin-left: 35px;
 }
 
+.product__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .product__info {
   font-size: 15px;
   margin: auto;
@@ -66,22 +71,90 @@
   font-weight: $font-weight-bold;
 }
 
-// @media (min-width: 768px) {
-//   .product__title {
-//     width: 445px;
-//     font-size: 43px;
-//     margin: auto;
-//     // flex-grow: 6;
-//   }
-//   .product__subtitle {
-//     width: 70px;
-//     text-align: center;
-//     margin: auto;
-//     // flex-grow: 1;
-//   }
-//   .product__info {
-//     width: 282px;
-//     font-size: 17px;
-//     // flex-grow: 0;
-//   }
-// }
+.product__photo-tablet {
+    display: none;
+  }
+
+@media (min-width: 768px) {
+  .product__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 35px;
+  }
+  .product__header {
+    flex-wrap: nowrap;
+  }
+  .product__title {
+    width: 600px;
+    font-size: 43px;
+    margin: auto;
+  }
+  .product__subtitle {
+    font-size: 17px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .product__info {
+    width: 285px;
+    font-size: 17px;
+    margin: 0;
+  }
+  .product__items {
+    width: 285px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 35px;
+  }
+  .product__item {
+    width: 285px;
+  }
+  .product__container {
+    width: 360px;
+    padding-top: 50px;
+  }
+  .product__photo {
+    display: none;
+  }
+  .product__photo-tablet {
+    display: block;
+    padding-top: 50px;
+  }
+  .product__price {
+    margin: 0;
+    font-size: 20px;
+    padding: 60px 0 25px 80px;
+  }
+  .btn--product {
+    margin: 0;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .product__title {
+    order: 1;
+    width: 600px;
+    font-size: 53px;
+    z-index: 1;
+  }
+  .product__subtitle {
+    width: 100px;
+    margin-right: 100px;
+  }
+  .product__container {
+    width: 360px;
+    padding-left: 200px;
+  }
+  .product__price {
+    padding: 125px 0 35px 80px;
+  }
+  .product__photo-tablet{
+    display: none;
+  }
+  .product__photo-desktop {
+    margin-top: -100px;
+  }
+}

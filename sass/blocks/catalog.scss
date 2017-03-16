@@ -49,3 +49,38 @@
 .catalog__add-to-basket path {
   fill: rgb(204, 204, 204);
 }
+
+@media (min-width: 768px) {
+  .catalog__item {
+    display: flex;
+    width: 670px;
+    margin: 30px auto;
+  }
+  .catalog__photo {
+    width: 334px;
+    height: 334px;
+  }
+  .catalog__title {
+    font-size: 20px;
+  }
+  .catalog__price {
+    font-size: 17px;
+  }
+  .catalog__item-content {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .catalog__item {
+    display: block;
+    width: 350px;
+  }
+  .catalog__item-content {
+    width: 80%;
+  }
+}

@@ -25,3 +25,31 @@
   margin-right: 35px;
   border: 1px solid rgb(229, 229, 229);
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    margin: auto;
+    padding: 25px;
+  }
+  .page-footer__logo {
+    display: block;
+    margin: auto;
+    width: 120px;
+  }
+  .page-footer__social {
+    margin: auto;
+    width: 230px;
+  }
+  .page-footer__separator {
+    display: none;
+  }
+  .page-footer__copyright {
+    margin-left: auto;
+    width: 200px;
+  }
+}
