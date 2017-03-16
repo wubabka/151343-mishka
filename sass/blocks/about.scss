@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+.about path {
+  fill: rgb(88, 204, 180);
+}
+
+.about__title {
+  font-size: 25px;
+  font-weight: $font-weight-bold;
+}
+
+.about__items {
+  margin-top: 30px;
+}
+
+.about__logo {
+  margin-top: 30px;
+}
+
+.about__text {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,43 @@
+.page-title {
+  display: flex;
+  height: 270px;
+  background-color: rgb(241, 241, 241);
+}
+
+.page-title--index {
+  background-image: url(/img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.page-title__h1 {
+  margin: auto;
+  font-size: 27px;
+  font-weight: $font-weight-bold;
+}
+
+.page-title__h1--index {
+  padding: 40px 35px 0px;
+  text-align: center;
+}
+
+// @media (min-width: 768px) {
+//   .page-title {
+//     height: 746px;
+//   }
+//   .page-title--index {
+//     background-image: url(../../img/hero-mobile@1x.jpg);
+//     background-repeat: no-repeat;
+//     background-position: 50% 20%;
+//     background-size: cover;
+//   }
+//   .page-title__h1 {
+//     margin: auto;
+//     font-size: 43px;
+//     font-weight: $font-weight-bold;
+//   }
+//   .page-title__h1--index {
+//     padding: 40px 35px 0px;
+//     text-align: center;
+//   }
+// }

@@ -1,0 +1,36 @@
+.production {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.production__wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(234, 234, 234);
+}
+
+.production__head {
+  display: flex;
+  margin: 30px 35px;
+}
+
+.production__logo {
+  margin-right: 25px;
+  ;
+}
+
+.production__title {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+}
+
+.production__logo path {
+  fill: rgb(88, 204, 180);
+}
+
+.production__text {
+  margin: 0 35px;
+  margin-top: 30px;
+  font-size: 13px;
+  line-height: 24px;
+}
