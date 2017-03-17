@@ -75,6 +75,10 @@
     display: none;
   }
 
+.product__photo-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .product__wrapper {
     display: flex;
@@ -155,6 +159,7 @@
     display: none;
   }
   .product__photo-desktop {
+    display: block;
     margin-top: -100px;
   }
 }

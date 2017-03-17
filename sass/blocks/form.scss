@@ -70,6 +70,16 @@
   border-radius: 50%;
 }
 
+.form__filter-field-radio:hover::before,
+.form__filter-field-check:hover::before {
+  border: 2px solid rgba(88, 204, 180, 1);
+}
+
+.form__filter-field-radio:active::before,
+.form__filter-field-check:active::before {
+  border: 2px solid rgba(88, 204, 180, 0.2);
+}
+
 .form__filter-radio:checked+.form__filter-field-radio::after {
   content: '';
   position: absolute;
@@ -114,6 +124,16 @@ input[type="email"] {
   padding: 15px 0;
 }
 
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-bottom: 2px solid rgba(88, 204, 180, 1);
+}
+
+.form__item_container:hover,
+.form__item_container:focus {
+  border-bottom: 2px solid rgba(88, 204, 180, 1);
+}
+
 input[type="tel"],
 input[type="email"] {
   width: auto;
@@ -132,6 +152,11 @@ input[type="email"] {
   border: 2px solid $color-black;
   padding-left: 18px;
   padding-top: 18px;
+}
+
+.form__textarea:hover,
+.form__textarea:focus {
+  border: 2px solid rgba(88, 204, 180, 1);
 }
 
 .form__text-required {

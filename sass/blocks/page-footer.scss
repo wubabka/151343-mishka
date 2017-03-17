@@ -16,8 +16,24 @@
   font-weight: $font-weight-bold;
 }
 
+.page-footer__copyright-text:hover {
+  opacity: 0.5;
+}
+
+.page-footer__copyright-text:active {
+  opacity: 0.2;
+}
+
 .page-footer__copyright-link path {
   fill: rgb(88, 204, 180);
+}
+
+.page-footer__copyright-link:hover path {
+  fill: rgb(60, 187, 166);
+}
+
+.page-footer__copyright-link:active path {
+  fill-opacity: 0.2;
 }
 
 .page-footer__separator {

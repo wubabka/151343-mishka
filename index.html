@@ -33,15 +33,12 @@
           />
         </g>
       </svg>
-
     </div>
-    <!--<input class="burger-check" id="burger-check" type="checkbox">
-    <label for="burger-check" class="burger"></label>-->
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav-item-tablet  main-nav__item--active">
+          <li class="main-nav__item  main-nav-item-tablet">
             <a class="main-nav__index-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item  main-nav__item--desktop">
@@ -126,6 +123,24 @@
     </nav>
   </header>
 
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
+
   <section class="page-title  page-title--index">
     <h1 class="page-title__h1  page-title__h1--index">Милые штуки ручной<br>работы для дома</h1>
   </section>
@@ -133,7 +148,7 @@
   <section class="category">
     <div class="category__wrapper">
       <div class="category__items">
-        <div class="category__item">
+        <div class="category__item  category__item--hover">
           <div class="category__value">Предметы интерьера</div>
           <div class="category__field">
             <svg version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -155,7 +170,7 @@
 
           </div>
         </div>
-        <div class="category__item">
+        <div class="category__item  category__item--hover">
           <div class="category__value">Детские игрушки</div>
           <div class="category__field">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

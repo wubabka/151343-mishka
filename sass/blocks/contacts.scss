@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__title {
   margin-left: 35px;
   font-size: 18px;
@@ -36,11 +41,23 @@
   border-bottom: 1px solid rgb(98, 209, 186);
 }
 
+.contacts__value--border:hover {
+  opacity: 0.5;
+}
+
+.contacts__value--border:active {
+  opacity: 0.1;
+}
+
 .contacts__map {
   margin-top: 40px;
 }
 
 .contacts__logo-tablet {
+  display: none;
+}
+
+.contacts__map--desktop {
   display: none;
 }
 
@@ -87,10 +104,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .contacts__container {
-    display: flex;
-    flex-direction: column;
-  }
   .contacts__header {
     order: 1;
     justify-content: flex-start;
@@ -118,6 +131,9 @@
   }
   .contacts__map {
     display: none;
+  }
+  .contacts__map--desktop {
+    display: block;
   }
   .btn--contacts {
     order: 3;
