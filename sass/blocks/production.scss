@@ -1,11 +1,16 @@
 .production {
   padding: 0 30px;
+<<<<<<< HEAD
+=======
+  margin: 0 auto;
+>>>>>>> master
 }
 
 .production__wrapper {
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(234, 234, 234);
+<<<<<<< HEAD
 }
 
 .production__wrapper:hover {
@@ -19,6 +24,8 @@
 
 .production__wrapper:active {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+=======
+>>>>>>> master
 }
 
 .production__head {
