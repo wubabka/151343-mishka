@@ -9,11 +9,18 @@ body {
   color: $color-black;
   background: white;
   width: auto;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
 }
 
 button {
@@ -24,4 +31,31 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
+}
+
+textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: auto;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    width: auto;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }

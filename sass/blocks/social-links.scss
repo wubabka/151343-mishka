@@ -7,3 +7,11 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+.social__link:hover path {
+  fill: $fill-icon-hover;
+}
+
+.social__link:active path {
+  fill-opacity: 0.2;
+}

@@ -6,3 +6,17 @@
   border: 2px solid black;
   margin: 30px auto;
 }
+
+.btn:hover {
+  color: $color-white;
+  background-color: $color-black;
+  transition: all 0.3s ease;
+}
+
+.btn:not(:hover) {
+  transition: all 0.5s ease;
+}
+
+.btn:active {
+  color: rgb(124, 124, 124);
+}
