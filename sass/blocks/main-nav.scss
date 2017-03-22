@@ -16,7 +16,6 @@
   background-color: $color-white;
   cursor: pointer;
   border: none;
-  transition: all 0.5s ease;
 }
 
 .main-nav__wrapper {
@@ -79,9 +78,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: auto;
-  left: 0;
+  top: 20px;
+  right: 0;
   &::before,
   &::after {
     content: "";
@@ -101,7 +99,10 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-nav__other-items {
+    display: none;
+  }
   .main-nav--closed .main-nav__items,
   .main-nav--closed .main-nav__user-items,
   .main-nav--closed .main-nav__other-items {
@@ -110,41 +111,37 @@
   .main-nav__item,
   .main-nav__user-item,
   .main-nav__other-item {
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    font-size: 17px;
     font-weight: $font-weight-bold;
-    padding: 10px 0;
-    border-bottom: 1px solid $color-white;
+    padding: 25px 0;
+    border: 1px solid rgb(234, 234, 234);
     text-align: center;
+  }
+  .main-nav__user-item {
+    justify-content: flex-start;
+  }
+  .main-nav__search,
+  .main-nav__basket-logo {
+    width: 80px;
+  }
+  .main-nav__basket {
+    display: flex;
   }
   .main-nav__user-item:nth-child(1) {
     display: none;
   }
-  .main-nav__search :hover path,
-  .main-nav__basket-logo :hover path {
-    fill: $color-black;
-  }
-  .main-nav__basket-state {
-    padding-left: 10px;
-  }
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 0;
-    left: 60px;
+    left: 0;
     z-index: 10;
     height: 80vh;
-    background-color: rgb(88, 204, 180);
+    background-color: $color-white;
     transition: all 0.2s ease;
-  }
-  .main-nav--opened .main-nav__wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 7px;
-    height: 100%;
-    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.3);
   }
   .main-nav--nojs .main-nav__toggle {
     display: none;
@@ -182,6 +179,9 @@
   }
   .main-nav__item {
     display: flex;
+  }
+  .main-nav__search-text {
+    display: none;
   }
   .main-nav__catalog-link,
   .main-nav__form-link,

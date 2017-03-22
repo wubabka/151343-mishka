@@ -71,6 +71,14 @@
   fill: rgb(204, 204, 204);
 }
 
+.catalog__add-to-basket:hover path {
+  fill: rgb(88, 204, 180);
+}
+
+.catalog__add-to-basket:active path {
+  fill-opacity: 0.2;
+}
+
 @media (min-width: 768px) {
   .catalog__item {
     display: flex;
@@ -92,7 +100,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .catalog__wrapper {
     display: flex;
     flex-direction: row;
