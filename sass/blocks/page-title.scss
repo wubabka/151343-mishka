@@ -1,10 +1,12 @@
 .page-title {
   display: flex;
-  height: 270px;
+  height: 175px;
   background-color: rgb(248, 248, 248);
 }
 
 .page-title--index {
+  width: 320px;
+  height: 275px;
   background-image: url(/img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 30%;
@@ -17,20 +19,23 @@
 }
 
 .page-title__h1--index {
-  padding: 40px 35px 0px;
+  padding: 0px 35px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .page-title {
     height: auto;
-    padding: 120px 0;
+    padding: 90px 0;
+    margin-top: -48px;
+    border-top: 1px solid rgb(229, 229, 229);
   }
   .page-title--index {
+    width: 768px;
+    height: 570px;
     background-image: url(/img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 20%;
-    background-size: cover;
   }
   .page-title__h1 {
     margin: auto;
@@ -45,7 +50,14 @@
 
 @media (min-width: 1150px) {
   .page-title {
-    padding: 70px 0;
+    margin-top: -44px;
+  }
+  .page-title--index {
+    width: 1150px;
+    height: 565px;
+    background-image: url(/img/hero-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
   }
   .page-title__h1 {
     font-size: 53px;

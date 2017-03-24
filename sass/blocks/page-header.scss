@@ -16,14 +16,12 @@
     display: none;
   }
   .page-header__logo-tablet {
-    width: 330px;
-    margin: auto;
+    width: 320px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-header__logo-tablet {
     width: 200px;
-    margin: auto;
   }
 }
