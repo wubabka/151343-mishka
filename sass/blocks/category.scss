@@ -43,6 +43,10 @@
 }
 
 @media (min-width: 768px) {
+  .category {
+    padding: 0 50px;
+    margin-top: -103px;
+  }
   .category__items {
     display: flex;
     justify-content: center;

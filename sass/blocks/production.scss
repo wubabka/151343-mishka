@@ -1,5 +1,5 @@
 .production {
-  padding: 0 30px;
+  padding: 30px;
 }
 
 .production__wrapper {
@@ -23,25 +23,53 @@
 
 .production__head {
   display: flex;
-  margin: 30px 35px;
+  padding: 25px 35px;
 }
 
 .production__logo {
-  margin-right: 25px;
+  padding-right: 25px;
 }
 
 .production__title {
   font-size: 17px;
   font-weight: $font-weight-bold;
+  margin: auto;
 }
 
 .production__logo path {
   fill: rgb(88, 204, 180);
 }
 
+.production__photo {
+  width: 260px;
+  height: 150px;
+  background-image: url(/img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.production__button {
+  margin: auto;
+}
+
+.production__button:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.production__button:not(:hover) {
+  transition: all 0.3s ease;
+}
+
+.production__button:active {
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
 .production__text {
-  margin: 0 35px;
-  margin-top: 30px;
+  padding: 30px 35px 0;
   font-size: 13px;
   line-height: 24px;
 }
@@ -55,33 +83,44 @@
   flex-direction: column;
 }
 
+.btn--catalog {
+  width: 75%;
+}
+
 @media (min-width: 768px) {
   .production {
-    padding: 0 50px;
-  }
-  .production__wrapper {
-    width: 670px;
-    margin: 30px auto;
+    padding: 55px 50px 30px;
   }
   .production__head {
     order: 1;
+    margin-right: auto;
   }
   .production__photo {
     order: -1;
     width: 668px;
     height: 455px;
   }
+  .production__title {
+    font-size: 20px;
+    margin: auto;
+  }
   .production__text {
-    order: 1;
-    margin-top: 0px;
+    order: 2;
+    padding: 0 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
   .btn--catalog {
-    order: 1;
+    order: 3;
     width: 90%;
+    margin-bottom: 40px;
   }
 }
 
 @media (min-width: 1150px) {
+  .production {
+    padding: 55px 50px 80px;
+  }
   .production__wrapper {
     display: flex;
     width: 1050px;
@@ -89,7 +128,10 @@
     flex-wrap: wrap;
   }
   .production__photo-desktop {
-    display: block;
+    background-image: url(/img/video-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     order: -1;
     width: 682px;
     height: 455px;
@@ -109,6 +151,11 @@
     display: none;
   }
   .production__text {
-    width: 200px;
+    width: 225px;
+  }
+  .btn--catalog {
+    width: 75%;
+    order: 3;
+    margin: 30px 40px 40px;
   }
 }

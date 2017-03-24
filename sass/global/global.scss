@@ -44,6 +44,10 @@ ul {
   list-style: none;
 }
 
+input {
+  outline: none;
+}
+
 @media (min-width: 768px) {
   body {
     width: auto;

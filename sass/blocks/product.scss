@@ -1,3 +1,8 @@
+.product {
+  padding: 30px 30px 0;
+  // outline: 1px solid yellow;
+}
+
 .product__wrapper {
   display: flex;
   flex-direction: column;
@@ -11,9 +16,7 @@
 .product__title {
   font-size: 25px;
   font-weight: $font-weight-bold;
-  margin: auto;
-  margin-top: 34px;
-  width: 250px;
+  // width: 250px;
 }
 
 .product__subtitle {
@@ -21,7 +24,6 @@
   font-weight: $font-weight-bold;
   color: rgb(99, 209, 187);
   text-transform: uppercase;
-  margin-left: 35px;
 }
 
 .product__container {
@@ -31,15 +33,12 @@
 
 .product__info {
   font-size: 15px;
-  margin: auto;
   width: 249px;
   margin-top: 30px;
 }
 
 .product__items {
   font-size: 15px;
-  margin-left: 35px;
-  margin-right: 35px;
   margin-top: 34px;
 }
 
@@ -72,25 +71,27 @@
 }
 
 .product__photo-tablet {
-    display: none;
-  }
+  display: none;
+}
 
 .product__photo-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
+  .product {
+    padding: 30px 50px 0;
+  }
   .product__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 35px;
   }
   .product__header {
     flex-wrap: nowrap;
   }
   .product__title {
-    width: 600px;
+    width: 550px;
     font-size: 43px;
     margin: auto;
   }
@@ -100,10 +101,16 @@
     text-align: center;
     margin: auto;
   }
+  .product__container {
+    width: 285px;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
   .product__info {
     width: 285px;
     font-size: 17px;
     margin: 0;
+    line-height: 30px;
   }
   .product__items {
     width: 285px;
@@ -115,21 +122,18 @@
   .product__item {
     width: 285px;
   }
-  .product__container {
-    width: 360px;
-    padding-top: 50px;
-  }
   .product__photo {
     display: none;
   }
   .product__photo-tablet {
+    width: 333px;
+    height: 404px;
     display: block;
-    padding-top: 50px;
+    margin-top: 40px;
   }
   .product__price {
-    margin: 0;
+    margin: 40px auto 0;
     font-size: 20px;
-    padding: 60px 0 25px 80px;
   }
   .btn--product {
     margin: 0;
@@ -138,27 +142,33 @@
 }
 
 @media (min-width: 1150px) {
+  .product {
+    padding: 0 50px;
+  }
   .product__title {
     order: 1;
-    width: 600px;
+    width: 530px;
     font-size: 53px;
     z-index: 1;
   }
   .product__subtitle {
     width: 100px;
-    margin-right: 100px;
+    margin-right: 35px;
+    margin-left: 35px;
   }
   .product__container {
-    width: 360px;
-    padding-left: 200px;
+    padding-left: 175px;
+    padding-right: 15px;
   }
   .product__price {
-    padding: 125px 0 35px 80px;
+    padding: 80px 0 10px;
   }
-  .product__photo-tablet{
+  .product__photo-tablet {
     display: none;
   }
   .product__photo-desktop {
+    width: 525px;
+    height: 636px;
     display: block;
     margin-top: -100px;
   }
