@@ -46,6 +46,14 @@
   display: none;
 }
 
+.page-footer__logo:hover path {
+  fill: rgb(60, 187, 166);
+}
+
+.page-footer__logo:active path {
+  fill-opacity: 0.2;
+}
+
 @media (min-width: 768px) {
   .page-footer__wrapper {
     display: flex;

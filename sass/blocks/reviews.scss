@@ -45,7 +45,6 @@
   display: block;
   margin-top: 10px;
   font-size: 17px;
-
 }
 
 .reviews__btn {
@@ -67,7 +66,6 @@
   fill-opacity: 0.2;
 }
 
-
 @media (min-width: 768px) {
   .reviews {
     padding: 0 50px;
@@ -75,6 +73,13 @@
     height: 427px;
     background-image: url(/img/review@1x.jpg);
     background-repeat: no-repeat;
+  }
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .reviews {
+      background-image: url(/img/review@2x.jpg);
+      background-size: 350px auto;
+    }
   }
   .reviews__wrapper {
     flex-direction: row;
