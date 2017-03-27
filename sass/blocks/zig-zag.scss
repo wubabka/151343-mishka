@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .zig-zag {
+    z-index: 10;
+  }
+  .zig-zag-container {
+    position: relative;
+    height: 24px;
+    // outline: 1px solid black;
+    background-image: url(/img/zigzag-tablet.png);
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .zig-zag-container {
+    margin-top: -150px;
+  }
+  .zig-zag--desktop {
+    margin-top: -20px;
+  }
+}

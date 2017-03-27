@@ -1,0 +1,23 @@
+.zag-zig {
+  z-index: 10;
+}
+
+.zag-zig-container {
+  height: 7px; // outline: 1px solid black;
+  background-image: url(/img/bg-zigzag-line.svg);
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .zag-zig-container {
+    height: 14px;
+    padding-bottom: 1px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .zag-zig-container {
+    height: 23px;
+    margin: 40px 0;
+  }
+}

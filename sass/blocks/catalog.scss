@@ -109,10 +109,12 @@
 }
 
 @media (min-width: 1150px) {
+  // .catalog {
+  //   padding: 90px 50px;
+  // }
   .catalog__photo {
     width: 316px;
-    height: 462px;
-    // outline: 1px solid yellow;
+    height: 462px; // outline: 1px solid yellow;
   }
   .catalog__wrapper {
     display: flex;
