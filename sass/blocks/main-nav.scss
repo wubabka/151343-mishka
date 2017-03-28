@@ -219,7 +219,8 @@
     border-left: 1px solid rgb(229, 229, 229);
     border-right: 1px solid rgb(229, 229, 229);
     text-align: center;
-    padding: 35px 0;
+    padding: 33px 0;
+    margin: auto;
   }
   .main-nav__basket {
     width: 260px;
@@ -248,8 +249,8 @@
     order: 1;
     background-color: $color-white;
     padding: 0;
-    height: 95px;
-    margin-right: 90px;
+    height: 88px;
+    margin-right: 60px;
   }
   .main-nav__catalog-link,
   .main-nav__form-link {
@@ -273,7 +274,6 @@
     border-left: 1px solid rgb(229, 229, 229);
     border-right: 1px solid rgb(229, 229, 229);
     text-align: center;
-    padding: 35px 0;
   }
   .main-nav__delivery {
     display: none;

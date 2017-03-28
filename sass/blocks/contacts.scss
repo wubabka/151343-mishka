@@ -32,13 +32,14 @@
 }
 
 .contacts__value {
-  width: 180px;
+  width: 60%;
   line-height: 30px;
   margin: 0 30px;
 }
 
 .contacts__value--border {
   border-bottom: 1px solid rgb(98, 209, 186);
+  width: 75%;
 }
 
 .contacts__value--border:hover {
@@ -108,7 +109,7 @@
     margin: auto;
   }
   .contacts__value--border {
-    width: 200px;
+    // width: 75%;
     margin-top: 0px;
   }
   .contacts__map {
