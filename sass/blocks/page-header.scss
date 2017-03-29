@@ -6,10 +6,27 @@
 
 .page-header__logo {
   margin: auto;
+  text-align: center;
+}
+
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
 }
 
 .page-header__logo-tablet {
   display: none;
+}
+
+.page-header__logo-tablet:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo-tablet:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {

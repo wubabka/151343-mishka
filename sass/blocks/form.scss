@@ -11,8 +11,8 @@
   font-size: 13px;
 }
 
-.form__filter-item-left,
-.form__filter-item-right {
+.form__item-left,
+.form__item-right {
   display: flex;
   flex-direction: column;
 }
@@ -29,35 +29,35 @@
   flex-grow: 1;
 }
 
-.form__filter-line {
+.form__line {
   height: 1px;
   background-color: rgb(88, 204, 180);
   flex-grow: 7;
   margin: auto;
 }
 
-.form__filter-field-radio,
-.form__filter-field-check {
+.form__field-radio,
+.form__field-check {
   font-size: 17px;
   font-weight: $font-weight-bold;
 }
 
-.form__filter-item {
+.form__item {
   padding: 10px 0;
   line-height: 35px;
 }
 
-.form__wrapper-right-check .form__filter-item {
+.form__wrapper-right-check .form__item {
   padding-bottom: 30px;
 }
 
-.form__filter-radio,
-.form__filter-check {
+.form__radio,
+.form__check {
   display: none;
 }
 
-.form__filter-radio+label,
-.form__filter-check+label {
+.form__radio+label,
+.form__check+label {
   cursor: pointer;
   position: relative;
   padding: 0 0 0 70px;
@@ -65,12 +65,12 @@
   line-height: 35px;
 }
 
-.form__filter-check+label {
+.form__check+label {
   margin-bottom: 35px;
 }
 
 // Radio custom
-.form__filter-field-radio::before {
+.form__field-radio::before {
   content: '';
   position: absolute;
   top: -3px;
@@ -81,17 +81,17 @@
   border-radius: 50%;
 }
 
-.form__filter-field-radio:hover::before,
-.form__filter-field-check:hover::before {
+.form__field-radio:hover::before,
+.form__field-check:hover::before {
   border: 2px solid rgba(88, 204, 180, 1);
 }
 
-.form__filter-field-radio:active::before,
-.form__filter-field-check:active::before {
+.form__field-radio:active::before,
+.form__field-check:active::before {
   border: 2px solid rgba(88, 204, 180, 0.2);
 }
 
-.form__filter-radio:checked+.form__filter-field-radio::after {
+.form__radio:checked+.form__field-radio::after {
   content: '';
   position: absolute;
   top: 11px;
@@ -103,7 +103,7 @@
 }
 
 // CheckBox custom
-.form__filter-field-check::before {
+.form__field-check::before {
   content: '';
   position: absolute;
   top: -3px;
@@ -113,7 +113,7 @@
   border: 2px solid $color-black;
 }
 
-.form__filter-check:checked+.form__filter-field-check::after {
+.form__check:checked+.form__field-check::after {
   content: '';
   position: absolute;
   top: 10px;
@@ -190,7 +190,7 @@ input[type="email"] {
   .form__text {
     font-size: 17px;
   }
-  .form__filter-line {
+  .form__line {
     display: none;
   }
   .form__wrapper-left {
@@ -202,13 +202,12 @@ input[type="email"] {
     margin: 0 -50px;
     padding: 30px 50px;
   }
-  .form__filter-item-left,
   .form__item-left {
     width: 10%;
     margin-right: 15%;
   }
-  .form__filter-field-radio,
-  .form__filter-field-check {
+  .form__field-radio,
+  .form__field-check {
     font-size: 19px;
   }
   .form__wrapper-right-radio,
@@ -230,12 +229,17 @@ input[type="email"] {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .form__wrapper-right-check .form__filter-item-right {
+  .form__wrapper-right-check .form__item-right {
     width: 50%;
   }
-  .form__filter-item-right,
   .form__item-right {
     display: flex;
+    flex-direction: row;
+  }
+  .form__label {
+    font-size: 17px;
+    font-weight: $font-weight-bold;
+    margin-top: 20px;
   }
   .form__input {
     margin-left: 20px;
@@ -258,7 +262,7 @@ input[type="email"] {
     margin-right: 40px;
   }
   .form__textarea {
-    width: 205%;
+    width: 210%;
   }
   .form__footer {
     display: flex;
@@ -281,7 +285,7 @@ input[type="email"] {
     width: 60%;
     margin-left: 150px;
   }
-  .form__filter-item-left,
+  .form__item-left,
   .form__item-left {
     width: 10%;
     margin-right: 6%;
@@ -295,18 +299,18 @@ input[type="email"] {
     width: 80%;
     margin-right: 200px;
   }
-  .form__wrapper-right-check .form__filter-item-right {
+  .form__wrapper-right-check .form__item-right {
     width: 30%;
   }
   .form__textarea {
-    width: 313%;
+    width: 315%;
   }
   .form__footer {
-    margin-left: 100px;
+    margin-left: 125px;
   }
   .form__text-required {
     font-size: 17px;
-    padding-right: 75px;
+    padding-right: 150px;
   }
   .btn--form {
     order: 1;
