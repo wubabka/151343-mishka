@@ -30,6 +30,7 @@
   margin-top: 35px;
   font-size: 15px;
   line-height: 30px;
+  color: $color-dark-gray;
 }
 
 .reviews__author {
@@ -45,6 +46,7 @@
   display: block;
   margin-top: 10px;
   font-size: 17px;
+  color: $color-dark-gray;
 }
 
 .reviews__btn {
@@ -123,7 +125,8 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    padding-left: 200px;
+    padding-left: 150px;
+    margin-left: 50px;
   }
   .reviews__title {
     font-size: 53px;

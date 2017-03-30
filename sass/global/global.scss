@@ -31,6 +31,7 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
+  outline: none;
 }
 
 textarea {
@@ -38,6 +39,7 @@ textarea {
   background-color: transparent;
   resize: none;
   outline: none;
+  font-family: inherit;
 }
 
 ul {
@@ -46,6 +48,7 @@ ul {
 
 input {
   outline: none;
+  font-family: inherit;
 }
 
 @media (min-width: 768px) {

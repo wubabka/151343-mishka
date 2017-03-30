@@ -15,20 +15,6 @@
   background: rgb(75, 189, 170);
 }
 
-.category__item--hover {
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-}
-
-.category__item--hover:hover {
-  // box-sizing: border-box;
-  // border-bottom: 5px solid rgb(88, 204, 180);
-  // height: 108px;
-  // padding-bottom: 5px;
-  transform: translateY(-5px);
-}
-
 .category__value {
   margin: auto;
   padding-right: 25px;
@@ -54,6 +40,14 @@
   }
   .category__items {
     display: flex;
+  }
+  .category__item--hover {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  .category__item--hover:hover {
+    transform: translateY(-5px);
   }
 }
 
