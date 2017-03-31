@@ -6,6 +6,27 @@
 
 .page-header__logo {
   margin: auto;
+  text-align: center;
+}
+
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-tablet:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo-tablet:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -16,12 +37,16 @@
     display: none;
   }
   .page-header__logo-tablet {
-    width: 320px;
+    width: 115px;
+    display: block;
+    margin: auto;
+    margin-right: 200px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-header__logo-tablet {
-    width: 200px;
+    width: 150px;
+    margin-right: 77px;
   }
 }
