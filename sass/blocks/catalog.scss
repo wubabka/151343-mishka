@@ -52,11 +52,7 @@
 .catalog__stats {
   margin-top: 15px;
   font-size: 13px;
-}
-
-.catalog__separator {
-  border: 1px solid rgb(234, 234, 234);
-  margin-top: 25px;
+  color: $color-dark-gray;
 }
 
 .catalog__prices {
@@ -64,6 +60,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid rgb(234, 234, 234);
 }
 
 .catalog__price {
@@ -93,17 +91,11 @@
   .catalog__photo {
     width: 334px;
     height: 334px;
-    // background-image: url(/img/photo-1-mobile@1x.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-  }
-  .catalog__item-content {
-    padding: 30px;
   }
   .catalog__title {
     font-size: 20px;
   }
-  .catalog__separator {
+  .catalog__prices {
     margin-top: 170px;
   }
   .catalog__price {
@@ -112,13 +104,15 @@
   .catalog__item-content {
     width: 40%;
   }
+  .catalog__prices--desktop {
+    margin-top: 143px;
+  }
 }
 
 @media (min-width: 1150px) {
   .catalog__photo {
     width: 316px;
     height: 462px;
-    // outline: 1px solid yellow;
   }
   .catalog__wrapper {
     display: flex;
@@ -130,10 +124,10 @@
     width: 316px;
     margin-top: 110px;
   }
-  .catalog__separator {
+  .catalog__prices {
     margin-top: 45px;
   }
-  .catalog__separator--desktop {
+  .catalog__prices--desktop {
     margin-top: 17px;
   }
   .catalog__item-content {

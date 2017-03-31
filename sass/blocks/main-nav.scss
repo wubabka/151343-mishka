@@ -28,12 +28,10 @@
   display: none;
 }
 
-.page-header__logo-tablet {
-  display: none;
-}
 
 .main-nav__delivery {
   display: none;
+  color: $color-dark-gray;
 }
 
 .main-nav__item :hover,
@@ -63,6 +61,7 @@
 
 .main-nav__delivery-desktop {
   display: none;
+  color: $color-dark-gray;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -148,24 +147,15 @@
     right: 0;
     left: 0;
     z-index: 10;
-    height: 80vh;
     background-color: $color-white;
     transition: all 0.2s ease;
   }
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    height: auto;
-  }
-  .main-nav--nojs .main-nav__item {
+  .main-nav--nojs .main-nav__items {
     display: block;
-  }
-  .main-nav--nojs .main-nav__item--active a {
-    padding-right: 21px;
-    padding-left: 21px;
-    text-align: left;
+    margin-top: 70px;
   }
   .main-nav--nojs .main-nav__user-items {
     display: block;
@@ -219,10 +209,6 @@
   .main-nav__user-item {
     display: flex;
   }
-  .page-header__logo-tablet {
-    display: block;
-    margin: auto;
-  }
   .main-nav__delivery {
     font-size: 15px;
     display: block;
@@ -234,7 +220,8 @@
     border-left: 1px solid rgb(229, 229, 229);
     border-right: 1px solid rgb(229, 229, 229);
     text-align: center;
-    padding: 35px 0;
+    padding: 33px 0;
+    margin: auto;
   }
   .main-nav__basket {
     width: 260px;
@@ -263,8 +250,8 @@
     order: 1;
     background-color: $color-white;
     padding: 0;
-    height: 72px;
-    margin-right: 90px;
+    height: 88px;
+    margin-right: 60px;
   }
   .main-nav__catalog-link,
   .main-nav__form-link {
@@ -272,7 +259,7 @@
     font-size: 17px;
   }
   .main-nav__item {
-    padding-top: 25px;
+    padding-top: 30px;
   }
   .main-nav__item--desktop {
     border-right: 1px solid rgb(229, 229, 229);
@@ -288,7 +275,6 @@
     border-left: 1px solid rgb(229, 229, 229);
     border-right: 1px solid rgb(229, 229, 229);
     text-align: center;
-    padding: 25px 0;
   }
   .main-nav__delivery {
     display: none;
