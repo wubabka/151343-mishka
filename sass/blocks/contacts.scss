@@ -64,7 +64,7 @@
   background-repeat: no-repeat;
 }
 
-.contacts__pin {
+.contacts__map--nojs .contacts__pin {
   margin: auto;
 }
 
@@ -149,11 +149,21 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .contacts__container {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 570px;
+  }
   .contacts__header {
     order: 1;
     justify-content: flex-start;
     padding-left: 60px;
     padding-top: 65px;
+    width: 40%;
+    height: 16%;
+    margin-top: 47px;
   }
   .contacts__title {
     order: 1;
@@ -162,6 +172,8 @@
   }
   .contacts__wrapper {
     order: 2;
+    width: 48%;
+    height: 39%;
   }
   .contacts__items {
     flex-direction: column;
@@ -171,46 +183,37 @@
   .contacts__item {
     display: flex;
     margin-left: 0;
-    margin-right: 50px;
   }
   .contacts__label {
-    width: 60px;
+    margin-right: 25px;
   }
   .contacts__label--tablet {
-    margin-right: 0;
+    margin-right: 25px;
   }
   .contacts__value {
-    width: 205px;
+    line-height: 30px;
   }
   .contacts__map {
-    display: none;
-  }
-  .contacts__map--desktop {
     width: 525px;
     height: 457px;
-    display: block;
-    margin-left: 40px;
+    order: 4;
   }
-  .contacts__map--desktop--nojs {
-    display: flex;
+  .contacts__map--nojs {
     width: 525px;
     height: 457px;
     background-image: url(/img/map-desktop@1x.jpg);
     background-repeat: no-repeat;
   }
-  .contacts__pin--desktop {
-    margin: auto;
-  }
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    .contacts__map--desktop--nojs {
+    .contacts__map--nojs {
       background-image: url(/img/map-desktop@2x.jpg);
       background-size: 525px auto;
     }
   }
   .btn--contacts {
     order: 3;
-    width: 55%;
+    width: 20%;
     margin-left: 165px;
   }
 }
