@@ -140,6 +140,7 @@
   }
   .btn--contacts {
     width: 35%;
+    margin-left: 220px;
   }
 }
 
@@ -211,9 +212,12 @@
       background-size: 525px auto;
     }
   }
-  .btn--contacts {
+  .contacts__action {
     order: 3;
-    width: 20%;
+    width: 48%;
+  }
+  .btn--contacts {
+    width: 230px;
     margin-left: 165px;
   }
 }
