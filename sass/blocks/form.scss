@@ -179,7 +179,7 @@ input[type="email"]:focus {
   border: 2px solid $color-black;
   padding-left: 18px;
   padding-top: 18px;
-  width: 90%;
+  width: 240px;
   height: 120px;
 }
 
@@ -314,7 +314,8 @@ input[type="email"]:focus {
     margin-right: 40px;
   }
   .form__textarea {
-    width: 202%;
+    margin-left: 20px;
+    width: 485px;
   }
   .form__footer {
     display: flex;
@@ -358,7 +359,8 @@ input[type="email"]:focus {
     width: 32%;
   }
   .form__textarea {
-    width: 292%;
+    margin-left: 50px;
+    width: 695px;
   }
   .form__footer {
     margin-left: 135px;
