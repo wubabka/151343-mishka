@@ -7,7 +7,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .page-title--index {
     width: 320px;
-    height: 275px;
+    height: 285px;
+    padding-top: 18px;
     background-image: url(/img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -23,12 +24,13 @@
 
 .page-title__h1 {
   margin: auto;
+  margin-top: 64px;
   font-size: 27px;
   font-weight: $font-weight-bold;
 }
 
 .page-title__h1--index {
-  margin-top: 55px;
+  margin-top: 49px;
   padding: 0px 30px;
   text-align: center;
   line-height: 30px;
@@ -38,7 +40,7 @@
   .page-title {
     height: auto;
     padding: 90px 0;
-    margin-top: -48px;
+    margin-top: -43px;
     border-top: 1px solid rgb(229, 229, 229);
   }
   .page-title--index {
@@ -56,7 +58,8 @@
     }
   }
   .page-title__h1 {
-    margin: auto;
+    margin-top: -21px;
+    margin-left: 201px;
     font-size: 43px;
     font-weight: $font-weight-bold;
   }
@@ -77,6 +80,9 @@
     background-size: cover;
   }
   .page-title__h1 {
+    margin-top: 0px;
+    margin-left: 344px;
     font-size: 53px;
+    line-height: 56px;
   }
 }

@@ -72,7 +72,7 @@
 
 // Radio custom
 .form__field-radio::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -3px;
   left: 0;
@@ -94,7 +94,7 @@
 }
 
 .form__radio:checked+.form__field-radio::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 11px;
   left: 14px;
@@ -106,7 +106,7 @@
 
 // CheckBox custom
 .form__field-check::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -3px;
   left: 0;
@@ -116,7 +116,7 @@
 }
 
 .form__check:checked+.form__field-check::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   left: 12px;
@@ -346,8 +346,7 @@ input[type="email"]:focus {
   .form__item-left {
     width: 10%;
     margin-right: 6%;
-  } // .form__wrapper-right-radio,
-  // .form__wrapper-right-check,
+  }
   .form__wrapper-right-name,
   .form__wrapper-right-phone,
   .form__wrapper-right-email,

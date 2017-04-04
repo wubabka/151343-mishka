@@ -7,6 +7,7 @@
 .page-header__logo {
   margin: auto;
   text-align: center;
+  z-index: 1;
 }
 
 .page-header__logo:hover {
@@ -40,13 +41,13 @@
     width: 115px;
     display: block;
     margin: auto;
-    margin-right: 200px;
+    margin-right: 205px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-header__logo-tablet {
     width: 150px;
-    margin-right: 77px;
+    margin-right: 100px;
   }
 }

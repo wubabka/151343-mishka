@@ -3,9 +3,10 @@
   font-weight: $font-weight-bold;
   font-size: 17px;
   border: 2px solid $color-dark-gray;
-  margin: 30px auto;
   line-height: 52px;
   text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .btn:hover {

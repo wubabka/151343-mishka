@@ -52,7 +52,7 @@
 
         <ul class="main-nav__user-items">
           <li class="main-nav__user-item">
-            <a href="index.html" class="page-header__logo-tablet">
+            <a href="index.html" class="page-header  logo-tablet">
               <picture>
                 <source media="(min-width: 1150px)" srcset="/img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
@@ -180,11 +180,11 @@
         <div class="product__subtitle">Товар недели</div>
       </header>
       <div class="product__container">
-        <p class="product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <p class="product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <div class="product__items">
           <div class="product__item">
             <div class="product__label">Цвет:</div>
-            <div class="product__value">"Тиффани"/серый</div>
+            <div class="product__value">«Тиффани»/серый</div>
           </div>
           <div class="product__item">
             <div class="product__label">Диаметр:</div>
@@ -198,11 +198,7 @@
         <div class="product__photo">
         </div>
         <div class="product__price">Цена: 990 руб.</div>
-        <a href="#open-modal" class="btn  btn--index">ЗАКАЗАТЬ</a>
-      </div>
-      <div class="product__photo-tablet">
-      </div>
-      <div class="product__photo-desktop">
+        <a href="#open-modal" class="btn  btn--index">заказать</a>
       </div>
     </div>
   </section>
@@ -213,7 +209,7 @@
     </div>
   </section>
 
-  <div class="popup">
+  <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
     <div id="open-modal" class="popup__modal">
       <div class="popup__wrapper">
         <a href="#close" title="Закрыть" class="close">X</a>
@@ -233,10 +229,10 @@
             <label class="popup__radio-field" for="radio-3">L</label>
           </div>
         </div>
-        <button class="popup__button">ДОБАВИТЬ</button>
+        <button class="popup__button" type="submit">ДОБАВИТЬ</button>
       </div>
     </div>
-  </div>
+  </form>
 
   <section class="about">
     <header class="about__header">
@@ -381,7 +377,7 @@
           </div>
         </li>
       </ul>
-      <button class="btn  btn--reviews" type="submit">НАПИСАТЬ</button>
+      <a href="form.html" type="button" class="btn  btn--reviews">написать</a>
     </div>
   </section>
 
@@ -422,13 +418,13 @@
           </div>
           <div class="contacts__item">
             <div class="contacts__label  contacts__label--tablet">адрес:</div>
-            <div class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+            <div class="contacts__value contacts__value--index">г. Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
           </div>
         </div>
       </div>
       <div id="map" class="contacts__map">
         <noscript>
-          <div class="contacts__map--nojs">
+          <div class="contacts__map-nojs">
             <div class="contacts__pin">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66px"
                 height="100.801px" viewBox="0 0 66 100.801" enable-background="new 0 0 66 100.801" xml:space="preserve">
@@ -442,7 +438,7 @@
         </noscript>
       </div>
       <div class="contacts__action">
-        <button class="btn  btn--contacts" type="submit">НАПИШИТЕ НАМ</button>
+        <a href="form.html" class="btn  btn--contacts">напишите нам</a>
       </div>
     </div>
   </section>
@@ -527,17 +523,12 @@
 
   <script type="text/javascript">
     ymaps.ready(init);
-    var myMap, mapDesktop, myPlacemark, placemarkDesktop;
+    var myMap, myPlacemark;
 
     function init() {
       myMap = new ymaps.Map("map", {
         center: [59.9363900641669, 30.322802999999986],
         zoom: 16
-      });
-
-      mapDesktop = new ymaps.Map("mapDesktop", {
-        center: [59.9363900641669, 30.322802999999986],
-        zoom: 17
       });
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -555,17 +546,7 @@
         iconImageOffset: [-35, -95]
       });
 
-      placemarkDesktop = new ymaps.Placemark(mapDesktop.getCenter(), {
-        hintContent: 'Россия, Санкт-Петербург, Большая Конюшенная улица, 14'
-      }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/icon-map-pin.svg',
-        iconImageSize: [67, 100],
-        iconImageOffset: [-35, -95]
-      });
-
       myMap.geoObjects.add(myPlacemark);
-      mapDesktop.geoObjects.add(placemarkDesktop);
     }
 
   </script>
