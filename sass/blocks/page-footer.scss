@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .page-footer__wrapper {
@@ -9,7 +9,10 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-around;
-  padding: 5px 50px;
+  // padding: 5px 50px;
+  padding-top: 25px;
+  border-top: 2px solid rgb(229, 229, 229);
+  margin: 0 35px;
 }
 
 .page-footer__copyright-text {
@@ -19,11 +22,6 @@
 
 .page-footer__copyright-link path {
   fill: rgb(88, 204, 180);
-}
-
-.page-footer__separator {
-  margin: 0 30px;
-  border: 1px solid rgb(229, 229, 229);
 }
 
 .page-footer__logo {
