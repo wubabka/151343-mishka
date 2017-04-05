@@ -33,6 +33,7 @@
 @media (min-width: 768px) {
   .page-header {
     padding-top: 0px;
+    height: 88px;
   }
   .page-header__logo {
     display: none;
@@ -40,7 +41,7 @@
   .page-header__logo-tablet {
     width: 115px;
     display: block;
-    margin: auto;
+    margin-top: 22px;
     margin-right: 205px;
   }
 }
@@ -49,5 +50,6 @@
   .page-header__logo-tablet {
     width: 150px;
     margin-right: 100px;
+    margin-top: 10px;    
   }
 }

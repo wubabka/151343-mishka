@@ -1,5 +1,6 @@
 .btn {
   width: 100%;
+  display: block;
   font-weight: $font-weight-bold;
   font-size: 17px;
   border: 2px solid $color-dark-gray;
@@ -21,4 +22,85 @@
 
 .btn:active {
   color: rgb(124, 124, 124);
+}
+
+.btn--contacts {
+  margin-top: 26px;
+}
+
+.btn--form {
+  margin-top: 26px;
+}
+
+.btn--index {
+  margin-top: 25px;
+  margin-bottom: 33px;
+}
+
+.btn--catalog {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+.btn--reviews {
+  margin-top: 34px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .btn--contacts {
+    width: 88%;
+    margin-top: 18px;
+    margin-left: 220px;
+  }
+  .btn--form {
+    width: 34.5%;
+    order: 1;
+  }
+  .btn--index {
+    width: 292px;
+    margin: 31px 0 0;
+  }
+  .btn--product {
+    margin: 0;
+    width: 80%;
+  }
+  .btn--catalog {
+    order: 3;
+    width: 88%;
+    margin-top: 32px;
+  }
+  .btn--reviews {
+    order: 2;
+    width: 26%;
+    height: 52px;
+    margin: 88px 0 0 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .btn--contacts {
+    width: 230px;
+    margin-left: 174px;
+    margin-top: 27px;
+  }
+  .btn--form {
+    order: 1;
+    width: 26.5%;
+    margin-left: 16px;
+  }
+  .btn--catalog {
+    width: 22%;
+    order: 3;
+    margin-left: 51px;
+    margin-top: 39px;
+  }
+  .btn--reviews {
+    order: 2;
+    width: 20%;
+    margin-top: 77px;
+  }
 }

@@ -2,7 +2,7 @@
   .zig-zag {
     z-index: 10;
   }
-  .zig-zag-container {
+  .zig-zag__container {
     position: relative;
     height: 24px;
     background-image: url(/img/zigzag-tablet.png);
@@ -11,10 +11,10 @@
 }
 
 @media (min-width: 1150px) {
-  .zig-zag-container {
+  .zig-zag__container {
     margin-top: -150px;
   }
-  .zig-zag--desktop {
+  .zig-zag__container--desktop {
     margin-top: -20px;
   }
 }
