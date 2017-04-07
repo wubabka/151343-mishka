@@ -70,7 +70,7 @@
   .reviews {
     padding: 0 0 0 50px;
     margin: 47px 0 78px;
-    height: 457px;
+    min-height: 457px;
     background-color: rgb(255, 255, 255);
     background-image: url(/img/review@1x.jpg);
     background-repeat: no-repeat;
@@ -111,6 +111,7 @@
     margin-top: 44px;
     font-size: 17px;
     line-height: 30px;
+    min-height: 115px;
   }
   .reviews__btn {
     margin-top: 61px;
@@ -124,7 +125,7 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    height: 457px;
+    min-height: 457px;
     margin-left: 50px;
     margin-top: 57px;
   }
@@ -139,6 +140,7 @@
     width: 770px;
     margin-top: 47px;
     margin-left: 5px;
+    min-height: 85px;
   }
   .reviews__author {
     width: 620px;

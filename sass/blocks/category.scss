@@ -2,13 +2,13 @@
   margin-top: -23px;
 }
 
-.category__wrapper {
-  // display: flex;
-}
+// .category__wrapper {
+//   display: flex;
+// }
 
-.category__items {
-  // margin: 0 auto;
-}
+// .category__items {
+//   margin: 0 auto;
+// }
 
 .category__item {
   display: flex;
@@ -29,8 +29,9 @@
 }
 
 .category__value {
-  padding-right: 25px;
+  padding-right: 88px;
   margin-top: 25px;
+  width: 125px;
 }
 
 .category__field {
@@ -60,7 +61,7 @@
     font-size: 20px;
   }
   .category__value {
-    padding-right: 25px;
+    padding-right: 90px;
     margin-top: 26px;
     margin-left: 5px;
     line-height: 30px;
@@ -89,7 +90,7 @@
     padding: 0 40px;
   }
   .category__value {
-    padding-right: 200px;
+    padding-right: 266px;
     margin-left: 0;
   }
 }
