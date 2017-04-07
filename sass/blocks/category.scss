@@ -2,6 +2,14 @@
   margin-top: -23px;
 }
 
+.category__wrapper {
+  // display: flex;
+}
+
+.category__items {
+  // margin: 0 auto;
+}
+
 .category__item {
   display: flex;
   height: 103px;
@@ -48,7 +56,7 @@
   }
   .category__item {
     width: 334px;
-    height: 119px;
+    height: 129px;
     font-size: 20px;
   }
   .category__value {

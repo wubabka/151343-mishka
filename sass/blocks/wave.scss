@@ -3,20 +3,20 @@
 }
 
 .wave-container {
-  height: 7px;
+  height: 9px;
   background-image: url(/img/bg-zigzag-line.svg);
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .wave-container {
-    height: 14px;
+    height: 19px;
     padding-bottom: 1px;
   }
 }
 
 @media (min-width: 1150px) {
   .wave-container {
-    height: 23px;
+    height: 25px;
   }
 }

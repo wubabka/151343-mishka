@@ -162,7 +162,7 @@
 
 @media (min-width: 768px) {
   .main-nav {
-    padding: 0 50px;
+    padding-left: 50px;
   }
   .main-nav__toggle {
     display: none;
@@ -210,7 +210,7 @@
     color: $color-dark-gray;
     font-size: 15px;
     display: inline-block;
-    margin-left: 75px;
+    margin-left: 95px;
     order: 3;
   }
   .main-nav__search {
@@ -239,6 +239,9 @@
 }
 
 @media (min-width: 1150px) {
+  .main-nav {
+    padding-left: 0px;
+  }
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
@@ -261,9 +264,9 @@
     padding-top: 30px;
   }
   .main-nav__item--desktop {
-    width: 184px;
+    width: 185px;
     border-right: 1px solid rgb(229, 229, 229);
-    margin-right: 34px;
+    margin-right: 32px;
   }
   .main-nav__user-items {
     display: flex;
@@ -278,6 +281,7 @@
   }
   .main-nav__basket {
     width: 250px;
+    padding-left: 19px;
   }
   .main-nav__delivery {
     display: none;
@@ -293,9 +297,9 @@
   }
   .main-nav__delivery-desktop {
     display: block;
-    width: 240px;
+    width: 231px;
     font-size: 15px;
-    padding-left: 378px;
+    padding-left: 379px;
     margin: auto;
   }
 }

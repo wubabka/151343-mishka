@@ -1,0 +1,18 @@
+.container-center {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container-center {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container-center {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}

@@ -27,7 +27,7 @@
 }
 
 .about__text {
-  margin-top: 11px;
+  margin-top: 15px;
   line-height: 20px;
   font-size: 17px;
   font-weight: $font-weight-bold;
@@ -39,7 +39,7 @@
 
 .about__item:nth-child(2) .about__text {
   width: 85%;
-  margin-top: 19px;
+  margin-top: 25px;
 }
 
 .about__item:nth-child(3) {
@@ -73,12 +73,12 @@
 
 .about__item:nth-child(6) .about__text {
   width: 85%;
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 @media (min-width: 768px) {
   .about {
-    padding: 43px 50px;
+    padding: 30px 50px;
   }
   .about__wrapper {
     width: 668px;
@@ -132,8 +132,14 @@
 
 @media (min-width: 1150px) {
   .about {
-    padding-left: 220px;
-    margin-top: 10px;
+    padding-top: 55px;
+  }
+  .about__header {
+    width: 400px;
+    padding-left: 170px;
+  }
+  .about__wrapper {
+    padding-left: 170px;
   }
   .about__item {
     margin-top: 10px;
