@@ -41,14 +41,14 @@
 
 .product__items {
   font-size: 15px;
-  margin-top: 19px;
+  margin-top: 28px;
 }
 
 .product__item {
   display: flex;
   border-bottom: 2px solid rgb(234, 234, 234);
-  padding-bottom: 8px;
-  margin-top: 11px;
+  padding-bottom: 12px;
+  margin-bottom: 9px;
 }
 
 .product__label {
@@ -56,12 +56,8 @@
   margin-right: 28px;
 }
 
-.product__value {
-  width: 130px;
-}
-
 .product__price {
-  margin-top: 25px;
+  margin-top: 26px;
   font-size: 17px;
   font-weight: $font-weight-bold;
   text-align: center;
@@ -71,7 +67,7 @@
   .product__photo {
     width: 260px;
     height: 315px;
-    margin-top: 30px;
+    margin-top: 17px;
     background-color: rgb(239, 239, 239);
     background-image: url(/img/triple-set-mobile@1x.jpg);
     background-repeat: no-repeat;
@@ -88,7 +84,7 @@
 
 @media (min-width: 768px) {
   .product {
-    padding: 30px 50px 0;
+    padding: 32px 50px 0;
   }
   .product__wrapper {
     display: flex;
@@ -118,6 +114,7 @@
     width: 100%;
     height: 430px;
     margin: 52px 0;
+    margin-bottom: 32px;
   }
   .product__info {
     width: 285px;
@@ -127,10 +124,7 @@
   }
   .product__items {
     width: 285px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 35px;
+    margin-top: 46px;
   }
   .product__item {
     width: 285px;
@@ -155,14 +149,14 @@
   }
   .product__price {
     width: 292px;
-    margin-top: 64px;
+    margin-top: 45px;
     font-size: 20px;
   }
 }
 
 @media (min-width: 1150px) {
   .product {
-    padding: 105px 50px 0;
+    padding: 112px 50px 0;
   }
   .product__title {
     order: 1;
@@ -179,21 +173,22 @@
   .product__container {
     width: 525px;
     height: 507px;
-    margin-top: 39px;
+    margin-top: 47px;
+    margin-bottom: 45px;
     padding-left: 175px;
     padding-right: 15px;
   }
   .product__items {
-    margin-top: 49px;
+    margin-top: 58px;
   }
   .product__price {
-    padding: 52px 0 0;
+    padding: 55px 0 0;
   }
   .product__photo {
     width: 525px;
     height: 636px;
     display: block;
-    margin-top: -157px;
+    margin-top: -158px;
     margin-left: 58px;
     background-color: rgb(239, 239, 239);
     background-image: url(/img/triple-set-desktop@1x.jpg);

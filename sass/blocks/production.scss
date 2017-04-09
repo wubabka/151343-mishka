@@ -1,7 +1,5 @@
 .production {
-  padding: 30px;
-  padding-bottom: 33px;
-  padding-top: 5px;
+  padding: 2px 30px 31px;
 }
 
 .production__wrapper {
@@ -25,7 +23,7 @@
 
 .production__head {
   display: flex;
-  padding: 22px 33px;
+  padding: 23px 33px;
 }
 
 .production__logo {
@@ -36,6 +34,7 @@
 .production__title {
   font-size: 17px;
   font-weight: $font-weight-bold;
+  line-height: 24px;
 }
 
 .production__logo path {
@@ -83,7 +82,7 @@
 }
 
 .production__text {
-  padding: 35px 35px 0;
+  padding: 29px 33px 0;
   font-size: 13px;
   line-height: 24px;
   color: $color-dark-gray;
@@ -96,14 +95,14 @@
 
 @media (min-width: 768px) {
   .production {
-    padding: 8px 50px 40px;
+    padding: 0 50px 4px;
     margin-bottom: 50px;
   }
   .production__head {
     order: 1;
     margin-right: auto;
     display: flex;
-    padding: 25px 40px;
+    padding: 27px 40px;
   }
   .production__logo {
     padding-right: 33px;
@@ -143,7 +142,7 @@
 
 @media (min-width: 1150px) {
   .production {
-    padding: 55px 50px 108px;
+    padding: 57px 50px 70px;
     margin-bottom: 30px;
   }
   .production__wrapper {
@@ -152,11 +151,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .production__photo--desktop {
+  .production__photo {
     background-color: rgb(174, 172, 170);
     background-image: url(/img/video-desktop@1x.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     order: -1;
     width: 682px;
@@ -164,7 +162,7 @@
   }
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    .production__photo--desktop {
+    .production__photo {
       background-color: rgb(174, 172, 170);
       background-image: url(/img/video-desktop@2x.jpg);
       background-size: 682px auto;
@@ -184,8 +182,8 @@
     width: 100px;
     display: flex;
     flex-direction: column;
-    margin-left: 4%;
-    padding: 35px 8px;
+    margin-left: 43px;
+    padding: 32px 8px;
   }
   .production__photo {
     width: 65%;

@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  padding: 25px 30px 0;
+  padding: 29px 30px 0;
 }
 
 .about path {
@@ -78,12 +78,13 @@
 
 @media (min-width: 768px) {
   .about {
-    padding: 30px 50px;
+    padding: 52px 50px;
   }
   .about__wrapper {
     width: 668px;
   }
   .about__items {
+    margin-top: 32px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -114,25 +115,25 @@
   }
   .about__item:nth-child(4) {
     order: 2;
-    margin-top: 18px;
+    margin-top: 19px;
     margin-left: 103px;
   }
   .about__item:nth-child(5) {
     order: 4;
-    margin-top: 61px;
+    margin-top: 62px;
     margin-left: 50px;
   }
   .about__item:nth-child(6) {
     order: 6;
     width: 45%;
-    margin-top: 59px;
+    margin-top: 60px;
     margin-left: 44px;
   }
 }
 
 @media (min-width: 1150px) {
   .about {
-    padding-top: 55px;
+    padding-top: 60px;
   }
   .about__header {
     width: 400px;
@@ -162,13 +163,13 @@
   .about__item:nth-child(4) {
     order: 2;
     width: 45%;
-    margin-top: 12px;
+    margin-top: 15px;
     margin-left: 127px;
   }
   .about__item:nth-child(5) {
     order: 4;
     width: 45%;
-    margin-top: 61px;
+    margin-top: 65px;
     margin-left: 61px;
   }
   .about__item:nth-child(6) {

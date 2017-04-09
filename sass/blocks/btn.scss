@@ -25,15 +25,15 @@
 }
 
 .btn--contacts {
-  margin-top: 24px;
+  margin-top: 26px;
 }
 
 .btn--form {
-  margin-top: 34px;
+  margin-top: 28px;
 }
 
 .btn--index {
-  margin-top: 29px;
+  margin-top: 27px;
   margin-bottom: 33px;
 }
 
@@ -46,24 +46,24 @@
 }
 
 .btn--reviews {
-  margin-top: 35px;
+  margin-top: 34px;
   margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   .btn--contacts {
     width: 88%;
-    margin-top: 25px;
+    margin-top: 57px;
     margin-left: 220px;
   }
   .btn--form {
     width: 34.5%;
     order: 1;
-    margin-top: 23px;
+    margin-top: 19px;
   }
   .btn--index {
     width: 292px;
-    margin: 31px 0 0;
+    margin: 32px 0 0;
   }
   .btn--product {
     margin: 0;
@@ -80,8 +80,8 @@
     width: 172px;
     height: 52px;
     margin: 0;
-    margin-top: 86px;
-    margin-left: 94px;
+    margin-top: 79px;
+    margin-left: 96px;
   }
 }
 
@@ -93,14 +93,15 @@
   }
   .btn--form {
     order: 1;
-    width: 26.5%;
+    width: 25%;
     margin-left: 16px;
+    margin-top: 16px;
   }
   .btn--catalog {
     width: 22%;
     order: 3;
     margin-left: 51px;
-    margin-top: 39px;
+    margin-top: 44px;
   }
   .btn--reviews {
     order: 2;
